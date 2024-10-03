@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casino Online Móvil - Juega y gana en cualquier lugar">
+    <meta name="keywords" content="casino, juegos, apuestas, online, móvil">
+    <title>Casino Online Móvil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle">
+            <span class="menu-icon">&#9776;</span> <!-- Icono de menú hamburguesa -->
+        </div>
+        <h1>Casino Online Móvil</h1>
+    </header>
+
+    <nav id="menu" class="menu-hidden">
+        <ul>
+            <li><a href="rules.html">Reglas</a></li>
+            <li><a href="instructions.html">Instrucciones</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Bienvenido al Mejor Casino Online Móvil</h2>
+            <p>Disfruta de una experiencia única de juego en cualquier lugar, con total seguridad y confianza.</p>
+            <a href="#" class="cta-button">Jugar Ahora</a>
+        </section>
+
+        <section class="features">
+            <h2>Nuestras Ventajas</h2>
+            <ul>
+                <li>Juegos rápidos y seguros</li>
+                <li>Atención al cliente 24/7</li>
+                <li>Depósitos y retiros instantáneos</li>
+                <li>Bonos y promociones exclusivas</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="contact.html" class="cta-button">Contactar al Cajero</a>
+        <p>&copy; 2024 Casino Online Móvil. Todos los derechos reservados.</p>
+    </footer>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003668;
+            padding: 15px;
+            text-align: center;
+            color: #ffd700;
+            border-bottom: 2px solid #ffffff;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .menu-toggle {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #00254a;
+            display: none;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+        .cta-button {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e03e00;
+        }
+
+        /* Sección de ventajas */
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .features ul li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .features ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #0a0a23;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+
+        /* Transiciones suaves */
+        nav ul li a, .features ul li {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover, .features ul li:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilos responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+
+    <script>
+        // Control del menú desplegable
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('menu-hidden');
+            if (menu.style.display === "none" || !menu.style.display) {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
